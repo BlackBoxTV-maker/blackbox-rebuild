@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bob_st_bg_c" />
+    <item android:gravity="center" android:drawable="@drawable/bob_settings_icon_c" />
+</layer-list>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/myChannel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:id="@id/logo_rel" android:layout_width="130.0dip" android:layout_height="wrap_content">
+            <ImageView android:id="@id/logo_back" android:layout_width="130.0dip" android:layout_height="130.0dip" android:src="@drawable/bg_channel_default" />
+            <ImageView android:id="@id/chan_logo" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:textColor="@color/colorDarkGrey" android:ellipsize="marquee" android:gravity="center" android:id="@id/chan_name" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="" android:maxLines="2" android:lines="2" android:layout_below="@id/logo_rel" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

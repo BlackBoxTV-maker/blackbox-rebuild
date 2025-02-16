@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/dialog_rounded_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="24.0dip" android:textStyle="bold" android:textColor="@color/transparent60" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="20.0dip" android:text="Player Improvements" />
+        <TextView android:textSize="22.0dip" android:textColor="@color/transparent60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="1- Press right and left button from remote to forward and backword video." />
+        <TextView android:textSize="22.0dip" android:textColor="@color/transparent60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="2- Change audio track of video by pressing menu button." />
+        <View android:background="@color/transparent30" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="29.0dip" />
+        <Button android:textColor="@color/colorDarkGrey" android:id="@id/ok_button" android:background="@drawable/setting_focus1" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="30.0dip" android:text="OK" />
+    </LinearLayout>
+</LinearLayout>

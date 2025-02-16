@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/twopanelayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sample_img" android:background="@drawable/transparentsmall" android:focusable="false" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <TextView android:textColor="@color/colorMoreDarkGrey" android:id="@id/upper_text" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginRight="40.0dip" android:text="PRESS MENU FOR EPG" android:layout_alignParentRight="true" android:onClick="upperText" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:baselineAligned="false" android:divider="?android:dividerVertical" android:showDividers="none">
+        <TextView android:textSize="40.0dip" android:textColor="@color/transparent60" android:id="@id/livetext" android:layout_width="200.0dip" android:layout_height="47.0dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="20.0dip" android:text="LIVE" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:baselineAligned="false" android:divider="?android:dividerHorizontal" android:layout_weight="4.0" android:layout_below="@id/livetext" android:showDividers="none">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="0.74">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ListView android:id="@id/cat_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_focused" android:divider="@null" android:dividerHeight="0.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" android:layout_weight="3.0">
+                <GridView android:gravity="center_horizontal" android:id="@id/chan_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="48.0dip" android:listSelector="@drawable/white_border_selector1" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:columnWidth="100.0dip" android:numColumns="6" style="@style/scrollbar_shape_style_cat" />
+                <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="70.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK   " />
+                    <TextView android:textColor="@color/colorMoreDarkGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SELECT          " />
+                    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BACK   " />
+                    <TextView android:textColor="@color/colorMoreDarkGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MAIN SCREEN" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

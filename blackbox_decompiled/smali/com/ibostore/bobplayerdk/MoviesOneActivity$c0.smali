@@ -1,0 +1,69 @@
+.class public Lcom/ibostore/bobplayerdk/MoviesOneActivity$c0;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Landroid/view/View$OnFocusChangeListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/ibostore/bobplayerdk/MoviesOneActivity;->onCreate(Landroid/os/Bundle;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic f:Lcom/ibostore/bobplayerdk/MoviesOneActivity;
+
+
+# direct methods
+.method public constructor <init>(Lcom/ibostore/bobplayerdk/MoviesOneActivity;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/ibostore/bobplayerdk/MoviesOneActivity$c0;->f:Lcom/ibostore/bobplayerdk/MoviesOneActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onFocusChange(Landroid/view/View;Z)V
+    .locals 0
+
+    if-eqz p2, :cond_1
+
+    iget-object p1, p0, Lcom/ibostore/bobplayerdk/MoviesOneActivity$c0;->f:Lcom/ibostore/bobplayerdk/MoviesOneActivity;
+
+    iget-object p1, p1, Lcom/ibostore/bobplayerdk/MoviesOneActivity;->Y:Landroid/widget/LinearLayout;
+
+    if-eqz p1, :cond_0
+
+    const/16 p2, 0x8
+
+    invoke-virtual {p1, p2}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    :cond_0
+    iget-object p1, p0, Lcom/ibostore/bobplayerdk/MoviesOneActivity$c0;->f:Lcom/ibostore/bobplayerdk/MoviesOneActivity;
+
+    iget-object p1, p1, Lcom/ibostore/bobplayerdk/MoviesOneActivity;->x:Landroid/widget/ImageView;
+
+    const/4 p2, 0x4
+
+    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    iget-object p1, p0, Lcom/ibostore/bobplayerdk/MoviesOneActivity$c0;->f:Lcom/ibostore/bobplayerdk/MoviesOneActivity;
+
+    iget-object p1, p1, Lcom/ibostore/bobplayerdk/MoviesOneActivity;->w:Landroid/widget/Button;
+
+    invoke-virtual {p1, p2}, Landroid/widget/Button;->setVisibility(I)V
+
+    :cond_1
+    return-void
+.end method

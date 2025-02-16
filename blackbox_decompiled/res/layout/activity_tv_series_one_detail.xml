@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/top_relative_layout" android:background="@color/colorBlack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/mainImg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:background="@color/transparent85" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:weightSum="10.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="10.0" android:layout_weight="7.5">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.8">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/back_btn" android:background="@drawable/circular_background" android:padding="15.0dip" android:focusable="true" android:nextFocusLeft="@id/episodes_gridview" android:nextFocusRight="@id/episodes_gridview" android:nextFocusDown="@id/download_series_button" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/back_arrow" />
+                    <TextClock android:textSize="55.0dip" android:textColor="@color/transparent60" android:id="@id/text_clock" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="2.0dip" android:text="" android:format12Hour="H:mm" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/panel4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="8.2">
+                <LinearLayout android:orientation="horizontal" android:id="@id/movie_detail_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="212.0dip" android:layout_height="wrap_content">
+                        <RelativeLayout android:gravity="center" android:layout_width="212.0dip" android:layout_height="283.0dip">
+                            <ImageView android:id="@id/poster" android:layout_width="212.0dip" android:layout_height="283.0dip" android:layout_marginTop="5.0dip" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/img_rating" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip">
+                        <TextView android:textSize="40.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/movie_name_is" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:includeFontPadding="false" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0">
+                                    <TextView android:textSize="@dimen/movie_genre" android:textColor="@color/colorRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Year |" android:maxLines="1" />
+                                    <TextView android:textSize="@dimen/movie_genre" android:textColor="@color/transparent60" android:id="@id/year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0">
+                                    <TextView android:textSize="@dimen/movie_genre" android:textColor="@color/colorRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Duration |" android:maxLines="1" />
+                                    <TextView android:textSize="@dimen/movie_genre" android:textColor="@color/transparent60" android:id="@id/length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="1" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0">
+                                    <TextView android:textSize="@dimen/movie_genre" android:textColor="@color/colorRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Age |" android:maxLines="1" />
+                                    <TextView android:textSize="@dimen/movie_genre" android:textColor="@color/transparent60" android:id="@id/age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0">
+                                    <TextView android:textSize="@dimen/movie_genre" android:textColor="@color/colorRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Genre |" android:maxLines="1" />
+                                    <TextView android:textSize="@dimen/movie_genre" android:textColor="@color/transparent60" android:id="@id/genre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="1" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <RatingBar android:theme="@style/RatingBar" android:id="@id/rating_bar" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:numStars="5" android:isIndicator="true" android:transformPivotX="0.0dip" android:transformPivotY="0.0dip" android:scaleX="0.7" android:scaleY="0.7" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0sp" android:textColor="@color/colorRating" android:layout_width="140.0dip" android:layout_height="wrap_content" android:text="Director " />
+                            <TextView android:textSize="18.0sp" android:textColor="@color/transparent60" android:ellipsize="end" android:id="@id/director" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <TextView android:textSize="18.0sp" android:textColor="@color/colorRating" android:layout_width="140.0dip" android:layout_height="wrap_content" android:text="Top Cast " />
+                            <TextView android:textSize="18.0sp" android:textColor="@color/transparent60" android:ellipsize="end" android:id="@id/actors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                        </LinearLayout>
+                        <TextView android:textSize="22.0sp" android:textColor="@color/colorRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Overview" android:maxLines="1" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/transparent60" android:ellipsize="end" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="" android:maxLines="10" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="2.5">
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView android:id="@id/youtube_player_view" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:layout_width="300.0dip" android:layout_height="169.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="45.0dip" android:layout_alignParentRight="true" app:autoPlay="false" app:showFullScreenButton="false" app:showSeekBar="false" app:showVideoCurrentTime="false" app:showVideoDuration="false" app:showYouTubeButton="false" app:useWebUi="false" />
+            <TextView android:textSize="20.0dip" android:textColor="@color/colorRating" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Episodes:" android:maxLines="1" />
+            <GridView android:id="@id/episodes_gridview" android:scrollbars="none" android:nextFocusUp="@id/back_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="25.0dip" android:listSelector="@color/transparent" android:horizontalSpacing="8.0dip" android:verticalSpacing="8.0dip" android:numColumns="4" android:layout_below="@id/movie_detail_layout" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/connecting_indicator_player" android:padding="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="30.0dip" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="90.0dip" android:layout_height="90.0dip" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar" />
+    </LinearLayout>
+</RelativeLayout>

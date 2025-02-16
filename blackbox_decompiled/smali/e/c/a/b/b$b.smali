@@ -1,0 +1,81 @@
+.class public Le/c/a/b/b$b;
+.super Le/c/a/b/b$e;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Le/c/a/b/b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Le/c/a/b/b$e<",
+        "TK;TV;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Le/c/a/b/b$c;Le/c/a/b/b$c;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Le/c/a/b/b$c<",
+            "TK;TV;>;",
+            "Le/c/a/b/b$c<",
+            "TK;TV;>;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p1, p2}, Le/c/a/b/b$e;-><init>(Le/c/a/b/b$c;Le/c/a/b/b$c;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public b(Le/c/a/b/b$c;)Le/c/a/b/b$c;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Le/c/a/b/b$c<",
+            "TK;TV;>;)",
+            "Le/c/a/b/b$c<",
+            "TK;TV;>;"
+        }
+    .end annotation
+
+    iget-object p1, p1, Le/c/a/b/b$c;->h:Le/c/a/b/b$c;
+
+    return-object p1
+.end method
+
+.method public c(Le/c/a/b/b$c;)Le/c/a/b/b$c;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Le/c/a/b/b$c<",
+            "TK;TV;>;)",
+            "Le/c/a/b/b$c<",
+            "TK;TV;>;"
+        }
+    .end annotation
+
+    iget-object p1, p1, Le/c/a/b/b$c;->i:Le/c/a/b/b$c;
+
+    return-object p1
+.end method

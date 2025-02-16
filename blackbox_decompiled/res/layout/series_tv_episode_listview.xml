@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_rounded_bg" android:layout_width="300.0dip" android:layout_height="350.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dip" android:textColor="@color/colorDarkGrey" android:gravity="center" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/select_audio_track" />
+    <ListView android:id="@id/series_ep_listview" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:scrollbars="none" android:layout_width="300.0dip" android:layout_height="290.0dip" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" android:listSelector="@drawable/setting_focus100" android:divider="@null" android:dividerHeight="2.0dip" />
+</LinearLayout>

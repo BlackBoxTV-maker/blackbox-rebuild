@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/top_relative_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0dip" android:textColor="@color/colorDarkGrey" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Manage Categories" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="12.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:layout_weight="4.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/man_tv_cat_layout" android:background="@drawable/channel_listview_selector1" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <CheckBox android:theme="@style/CheckBoxTheme1" android:textColor="@color/colorDarkGrey" android:ellipsize="marquee" android:layout_gravity="center_horizontal" android:id="@id/cat_tv_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/boot_box_size_1" android:textColor="@color/colorDarkGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/man_cat_mar_left" android:text="Live-TV Categories" />
+                </LinearLayout>
+                <ListView android:id="@id/tv_list_is" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:listSelector="@drawable/channel_listview_selector1" android:divider="@drawable/horizontal_movie_line1" android:dividerHeight="1.0dip" style="@style/scrollbar_shape_style_chan" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/man_vod_cat_layout" android:background="@drawable/channel_listview_selector1" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <CheckBox android:theme="@style/CheckBoxTheme1" android:textColor="@color/colorDarkGrey" android:ellipsize="marquee" android:layout_gravity="center_horizontal" android:id="@id/cat_vod_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/boot_box_size_1" android:textColor="@color/colorDarkGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/man_cat_mar_left" android:text="Movie Categories" />
+                </LinearLayout>
+                <ListView android:id="@id/movies_list_is" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:listSelector="@drawable/channel_listview_selector1" android:divider="@drawable/horizontal_movie_line1" android:dividerHeight="1.0dip" style="@style/scrollbar_shape_style_chan" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_weight="4.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/man_series_cat_layout" android:background="@drawable/channel_listview_selector1" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <CheckBox android:theme="@style/CheckBoxTheme1" android:textColor="@color/colorDarkGrey" android:ellipsize="marquee" android:layout_gravity="center_horizontal" android:id="@id/cat_series_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/boot_box_size_1" android:textColor="@color/colorDarkGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/man_cat_mar_left" android:text="TV Series Categories" />
+                </LinearLayout>
+                <ListView android:id="@id/tvseries_list_is" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:listSelector="@drawable/channel_listview_selector1" android:divider="@drawable/horizontal_movie_line1" android:dividerHeight="1.0dip" style="@style/scrollbar_shape_style_chan" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/connecting_indicator" android:padding="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="30.0dip" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="90.0dip" android:layout_height="90.0dip" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/connecting_indicator_player" android:padding="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="30.0dip" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="90.0dip" android:layout_height="90.0dip" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar" />
+    </LinearLayout>
+</RelativeLayout>

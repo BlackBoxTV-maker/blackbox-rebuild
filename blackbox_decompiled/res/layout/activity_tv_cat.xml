@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/top_relative_layout" android:background="@color/colorSettingBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="20.0dip" android:weightSum="10.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.2">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/tv_pic_simple" android:background="@drawable/monitor" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+                <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/live_tv_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip" android:text="" android:layout_toRightOf="@id/tv_pic_simple" />
+                <TextClock android:textSize="40.0dip" android:textColor="@color/transparent60" android:id="@id/text_clock" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.8">
+            <GridView android:id="@id/tv_cat_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" android:horizontalSpacing="20.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

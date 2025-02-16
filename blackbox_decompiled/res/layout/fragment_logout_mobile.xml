@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dip" android:textColor="@color/colorDarkGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/manage_user_account" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/colorDarkGrey" android:id="@id/login_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/you_are_not_logged_in" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/colorDarkGrey" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="@string/registration_date" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/transparent60" android:id="@id/reg_date" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="Reg Date " />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/colorDarkGrey" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="@string/expiry_date" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/transparent60" android:id="@id/expiry_date" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="Expiry Date" />
+    </LinearLayout>
+    <Button android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/login_logout_btn" android:background="@drawable/mybuttonselector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/logout1" />
+</LinearLayout>

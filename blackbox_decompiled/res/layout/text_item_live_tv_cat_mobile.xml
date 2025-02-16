@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/cat_linLayout" android:background="@drawable/list_selector_focused6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/cat_layout" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/movie_lock" android:background="@drawable/mlock" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="@dimen/cat_img_mar_left" />
+        <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/cat_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+</LinearLayout>

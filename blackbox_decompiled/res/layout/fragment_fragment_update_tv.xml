@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/colorDarkGrey" android:id="@id/appversioninfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Ver" />
+            <LinearLayout android:orientation="horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="@color/colorDarkGrey" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/wifi_mac_id" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/colorDarkGrey" android:id="@id/app_mac1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Mac One: 00:00:00:00:00:00" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="@color/colorDarkGrey" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/ethernet_mac_id" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/colorDarkGrey" android:id="@id/app_mac2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Mac Two: 00:00:00:00:00:00" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/update_checking_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/checking_for_updated" android:maxLines="1" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/update_loadinglayout" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginTop="30.0dip">
+            <ProgressBar android:id="@id/update_progress" android:visibility="visible" android:layout_width="44.0dip" android:layout_height="44.0dip" android:indeterminate="true" style="@style/Base.Widget.AppCompat.ProgressBar" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffe0e0e0" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ten_dp" android:layout_marginTop="12.0dip" android:text="@string/please_wait" android:layout_toRightOf="@id/update_progress" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/getupdate_button" android:background="@drawable/mybuttonselector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

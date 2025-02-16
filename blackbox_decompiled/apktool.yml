@@ -1,0 +1,34 @@
+version: 2.11.0
+apkFileName: blackbox.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 23
+  targetSdkVersion: 29
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 2227000
+  versionName: 222.7
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- jpg
+- ogg
+- png
+- res/mipmap-hdpi/ic_launcher_roundd.webp
+- res/mipmap-hdpi/ic_launcherr.webp
+- res/mipmap-mdpi/ic_launcher_roundd.webp
+- res/mipmap-mdpi/ic_launcherr.webp
+- res/mipmap-xhdpi/ic_launcher_roundd.webp
+- res/mipmap-xhdpi/ic_launcherr.webp
+- res/mipmap-xxhdpi/ic_launcher_roundd.webp
+- res/mipmap-xxhdpi/ic_launcherr.webp
+- res/mipmap-xxxhdpi/ic_launcher_roundd.webp
+- res/mipmap-xxxhdpi/ic_launcherr.webp

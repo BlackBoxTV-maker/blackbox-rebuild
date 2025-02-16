@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_relative_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sample_img" android:background="@drawable/transparentsmall" android:focusable="false" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <ImageView android:background="@color/transparent75" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/card_view_load" android:background="@color/colorSettingBackground" android:padding="@dimen/cardview_padding" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/conn_text_width" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/connecting_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerInside" android:adjustViewBounds="true" android:text="     loading Time-Shift Data please wait....     " android:maxLines="1" android:marqueeRepeatLimit="0" />
+        <ProgressBar android:id="@id/pb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pb_margin_top" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    </LinearLayout>
+    <TextView android:textSize="22.0dip" android:textColor="@color/colorMoreDarkGrey" android:id="@id/upper_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginRight="30.0dip" android:text="Time-Shift" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:baselineAligned="false" android:divider="?android:dividerVertical" android:showDividers="none">
+        <ImageView android:layout_gravity="right" android:id="@id/livetext" android:layout_width="200.0dip" android:layout_height="@dimen/catch_up_text_height" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:baselineAligned="false" android:divider="?android:dividerHorizontal" android:layout_weight="4.0" android:layout_below="@id/livetext" android:showDividers="none">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:layout_marginBottom="@dimen/catch_up_top_bot_mar" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ListView android:id="@id/cat_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_focused3" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip" style="@style/catgoodList" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/catch_up_grid_mar_left" android:layout_marginRight="@dimen/catch_up_grid_mar_right" android:layout_weight="3.0">
+                <GridView android:gravity="center_horizontal" android:id="@id/chan_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="62.0dip" android:listSelector="@drawable/white_border_selector22" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:columnWidth="100.0dip" android:numColumns="6" style="@style/scrollbar_shape_style_cat" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/connecting_indicator_player" android:padding="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="30.0dip" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="90.0dip" android:layout_height="90.0dip" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/top_relative_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/upper_app_layout" android:background="#ff004e64" android:layout_width="fill_parent" android:layout_height="@dimen/radio_text_h">
+            <TextView android:textSize="@dimen/radio_text_size1" android:textColor="@color/white" android:id="@id/myapps1" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RADIO" android:layout_alignParentTop="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/radio_grid_mar_lr" android:layout_marginTop="@dimen/radio_grid_mar_top" android:layout_marginRight="@dimen/radio_grid_mar_lr" android:weightSum="10.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+                <GridView android:gravity="center_horizontal" android:id="@id/chan_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/radio_grid_mar_bot" android:listSelector="@drawable/white_border_selector3" android:numColumns="2" style="@style/scrollbar_shape_style_chan" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_gravity="center" android:background="@drawable/transparentsmall" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="51.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip">
+                        <TextView android:textSize="@dimen/radio_ch_size" android:textColor="@color/transparent60" android:gravity="center" android:id="@id/current_radio_channel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Radio Channel" />
+                        <TextView android:textSize="@dimen/duration_size_is" android:textColor="@color/transparent60" android:gravity="center" android:id="@id/duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="00:00" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

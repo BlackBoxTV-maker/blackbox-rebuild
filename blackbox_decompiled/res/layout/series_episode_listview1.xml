@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_rounded_bg" android:layout_width="500.0dip" android:layout_height="600.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0dip" android:textColor="@color/colorDarkGrey" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="50.0dip" android:text="Select Episode" />
+    <ListView android:id="@id/series_ep_listview" android:layout_width="400.0dip" android:layout_height="350.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="20.0dip" android:listSelector="@drawable/setting_focus1" android:divider="@null" android:dividerHeight="5.0dip" />
+</LinearLayout>

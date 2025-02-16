@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lb="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/video_surface_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="clip_horizontal|clip_vertical">
+        <SurfaceView android:id="@id/surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:layout_marginRight="80.0dip" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/playback_speed_img" android:layout_width="32.0dip" android:layout_height="29.0dip" android:layout_marginTop="5.0dip" />
+        <TextView android:textSize="32.0dip" android:textColor="@color/colorHelpText" android:id="@id/playback_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/player_upper_layout" android:background="@color/transparent" android:paddingTop="40.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="520.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/channel_full_epg_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="32.0dip" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/upper_movie_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/summary_details" android:maxLines="1" />
+                <TextView android:textSize="22.0dip" android:textColor="@color/colorMoreDarkGrey" android:ellipsize="end" android:id="@id/vod_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="9" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/player_controls_layout" android:background="@drawable/transparant_back" android:paddingTop="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="190.0dip" android:weightSum="10.0" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.2">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tv_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/live_poster" android:layout_width="105.0dip" android:layout_height="105.0dip" android:layout_centerInParent="true" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/channel_tv_resolution" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vod_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/player_vod_logo" android:layout_width="107.0dip" android:layout_height="143.0dip" android:layout_marginLeft="5.0dip" android:scaleType="fitXY" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/colorMoreDarkGrey" android:gravity="center" android:id="@id/channel_resolution" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:text="" android:maxLines="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.8">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.7">
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="28.0dip" android:textColor="@color/white" android:id="@id/player_vod_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Movie Name" android:maxLines="1" android:includeFontPadding="false" />
+                            <TextView android:textSize="15.0dip" android:textColor="@color/colorMoreDarkGrey" android:id="@id/player_vod_year_genre" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Movie Genre" android:maxLines="1" android:includeFontPadding="false" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.3">
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/white" android:id="@id/vod_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Day" android:maxLines="1" />
+                            <TextView android:textSize="@dimen/vod_quality_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" | " />
+                            <TextView android:textSize="17.0dip" android:textColor="@color/white" android:id="@id/vod_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Day" android:maxLines="1" />
+                            <TextView android:textSize="@dimen/vod_quality_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" | " />
+                            <TextView android:textSize="22.0dip" android:textColor="@color/white" android:id="@id/vod_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Day" android:maxLines="1" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:weightSum="10.0">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.8">
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.warkiz.widget.IndicatorSeekBar android:id="@id/progressBar" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:isb_indicator_color="@color/colorPrimayDark" app:isb_indicator_text_color="@color/white" app:isb_indicator_text_size="20.0sp" app:isb_indicator_top_content_layout="@layout/custom_top_content_view_round" app:isb_progress="0.0" app:isb_seek_smoothly="true" app:isb_show_indicator="rounded_rectangle" app:isb_thumb_drawable="@drawable/thumb_new1" app:isb_thumb_size="15.0dip" app:isb_track_background_color="@color/colorMoreDarkGrey" app:isb_track_background_size="4.0dip" app:isb_track_progress_color="@color/colorPrimayDark" app:isb_track_progress_size="6.0dip" app:isb_track_rounded_corners="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.2">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/colorDarkGrey" android:id="@id/durationLabel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="00:00:00" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/top_movie_text_mar_left" android:text="The Top Selection Today" android:layout_above="@id/down_arrow" />
+                    <ImageView android:id="@id/down_arrow" android:background="@drawable/down_arrow_back" android:visibility="gone" android:layout_width="359.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/down_arrow_mar_left" android:layout_alignParentBottom="true" />
+                    <LinearLayout android:orientation="horizontal" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_alignParentBottom="true">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/colorMoreDarkGrey" android:id="@id/vod_quality_full" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FULL" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/colorMoreDarkGrey" android:id="@id/vod_quality_hd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HD" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/colorMoreDarkGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" | " />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/colorMoreDarkGrey" android:id="@id/vod_quality_4k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4K" />
+                    </LinearLayout>
+                    <RelativeLayout android:layout_width="320.0dip" android:layout_height="110.0dip" android:layout_marginLeft="@dimen/middle_icons_mar_left">
+                        <ImageView android:id="@id/prev_icon" android:background="@drawable/previous_back" android:focusable="true" android:layout_width="40.0dip" android:layout_height="22.0dip" android:layout_toLeftOf="@id/backward_icon" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/backward_icon" android:background="@drawable/backward_back" android:focusable="true" android:layout_width="34.0dip" android:layout_height="30.0dip" android:layout_marginLeft="7.0dip" android:layout_toLeftOf="@id/play_pause_icon" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/play_pause_icon" android:focusable="true" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/forward_icon" android:background="@drawable/forward_back" android:focusable="true" android:layout_width="34.0dip" android:layout_height="30.0dip" android:layout_marginRight="7.0dip" android:layout_toRightOf="@id/play_pause_icon" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/next_icon" android:background="@drawable/next_back" android:focusable="true" android:layout_width="40.0dip" android:layout_height="22.0dip" android:layout_toRightOf="@id/forward_icon" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                        <ImageView android:id="@id/movie_favourite" android:focusable="true" android:layout_width="24.0dip" android:layout_height="21.0dip" android:layout_marginLeft="@dimen/bottom_sett_mar_left" android:src="@drawable/favorite_back" />
+                        <ImageView android:id="@id/movie_audiotrack" android:background="@drawable/audiotrack_back" android:focusable="true" android:layout_width="24.0dip" android:layout_height="23.0dip" android:layout_marginLeft="@dimen/bottom_sett_mar_left" />
+                        <ImageView android:id="@id/movie_subtitle" android:background="@drawable/subtitle_back" android:focusable="true" android:layout_width="22.0dip" android:layout_height="17.0dip" android:layout_marginLeft="@dimen/bottom_sett_mar_left" />
+                        <ImageView android:id="@id/movie_zoom" android:background="@drawable/zoom_back" android:focusable="true" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/bottom_sett_mar_left" />
+                        <ImageView android:id="@id/movie_settings" android:background="@drawable/settings_back" android:focusable="true" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="@dimen/bottom_sett_mar_left" />
+                        <ImageView android:id="@id/movie_back" android:background="@drawable/back_back" android:focusable="true" android:layout_width="30.0dip" android:layout_height="17.0dip" android:layout_marginLeft="@dimen/bottom_sett_mar_left" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/forward_backward_layout" android:background="@color/transparent" android:padding="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="34.0dip" android:textColor="@color/transparent" android:gravity="center" android:id="@id/sec_forward" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="00:00 " />
+    </LinearLayout>
+    <ImageView android:id="@id/sample100_img" android:background="@drawable/transparentsmall" android:layout_width="150.0dip" android:layout_height="42.0dip" android:layout_marginLeft="270.0dip" android:layout_marginBottom="87.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

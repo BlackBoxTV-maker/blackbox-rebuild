@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/myChannel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/catch_up_grid_wh" android:layout_height="wrap_content" android:layout_marginTop="@dimen/catch_up_grid_mar_top_is">
+        <RelativeLayout android:id="@id/logo_rel" android:layout_width="@dimen/catch_up_grid_wh" android:layout_height="wrap_content">
+            <ImageView android:id="@id/logo_back" android:layout_width="@dimen/catch_up_grid_wh" android:layout_height="@dimen/catch_up_grid_wh" android:src="@drawable/bg_channel_default" />
+            <ImageView android:id="@id/chan_logo" android:layout_width="@dimen/catch_up_logo_wh" android:layout_height="@dimen/catch_up_logo_wh" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/timeshift_clock" android:layout_width="@dimen/clock_wh" android:layout_height="@dimen/clock_wh" android:layout_marginTop="@dimen/clock_mar_rt" android:layout_marginRight="@dimen/clock_mar_rt" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/chan_name_size" android:textColor="@color/colorDarkGrey" android:ellipsize="marquee" android:gravity="center" android:id="@id/chan_name" android:layout_width="fill_parent" android:layout_height="@dimen/catch_up_height" android:text="" android:maxLines="2" android:lines="2" android:layout_below="@id/logo_rel" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/top_relative_layout" android:background="@color/colorBlack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/mainImg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:background="@color/transparent85" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="25.0dip" android:weightSum="10.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="10.0" android:layout_weight="7.5">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.3">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/upper_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/back_btn" android:background="@drawable/circular_background_1" android:padding="10.0dip" android:focusable="true" android:nextFocusRight="@id/seasons_lv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="0.0dip" android:src="@drawable/back_arrow" />
+                    <TextClock android:textSize="26.0dip" android:textColor="@color/transparent60" android:id="@id/text_clock" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.7">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.8">
+                    <ListView android:id="@id/seasons_lv" android:scrollbars="none" android:nextFocusLeft="@id/episodes_lv" android:nextFocusRight="@id/episodes_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_focused33" android:divider="@null" android:dividerHeight="1.0dip">
+                        <requestFocus />
+                    </ListView>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.7">
+                    <ListView android:id="@id/episodes_lv" android:scrollbars="none" android:nextFocusRight="@id/seasons_lv" android:nextFocusUp="@id/seasons_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_focused33" android:divider="@drawable/listview_divider_1" android:dividerHeight="1.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.5">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView android:id="@id/youtube_player_view" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:layout_width="180.0dip" android:layout_height="101.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="45.0dip" android:layout_centerHorizontal="true" app:autoPlay="false" app:showFullScreenButton="false" app:showSeekBar="false" app:showVideoCurrentTime="false" app:showVideoDuration="false" app:showYouTubeButton="false" app:useWebUi="false" />
+                <ImageView android:id="@id/poster" android:layout_width="145.0dip" android:layout_height="194.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitXY" android:layout_below="@id/youtube_player_view" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/movie_name_is" android:layout_width="145.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Movies" android:maxLines="1" android:includeFontPadding="false" android:layout_below="@id/poster" android:layout_centerHorizontal="true" />
+                <RelativeLayout android:id="@id/rating_year_layout" android:layout_width="145.0dip" android:layout_height="wrap_content" android:weightSum="10.0" android:layout_below="@id/movie_name_is" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="11.0dip" android:textColor="@color/transparent60" android:id="@id/year" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0000-00-00" android:includeFontPadding="false" />
+                    <RatingBar android:theme="@style/RatingBar" android:id="@id/rating_bar" android:paddingTop="2.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:numStars="5" android:isIndicator="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Base.Widget.AppCompat.RatingBar.Small" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/connecting_indicator_player" android:padding="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="30.0dip" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="90.0dip" android:layout_height="90.0dip" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar" />
+    </LinearLayout>
+</RelativeLayout>

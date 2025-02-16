@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/top_relative_layout" android:background="@color/colorSettingBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:weightSum="10.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="1.0">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <TextView android:textSize="26.0dip" android:textColor="@color/colorMoreDarkGrey" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="TV GUIDE | LIVE" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <TextView android:textSize="26.0dip" android:textColor="@color/colorMoreDarkGrey" android:gravity="right" android:layout_gravity="center" android:id="@id/pages" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="page" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.9">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+                <ListView android:id="@id/day_list" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" android:listSelector="@drawable/cat_listview_selector" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip" android:layout_weight="2.5" style="@style/scrollbar_shape_style_cat" />
+                <ListView android:id="@id/catchup_program_list" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginBottom="9.0dip" android:listSelector="@drawable/listview_selector" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip" android:layout_weight="7.5" android:layout_toRightOf="@id/day_list" style="@style/scrollbar_shape_style_cat" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:background="@color/colorBlueFaded" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.1">
+            <TextView android:textSize="20.0dip" android:textColor="@color/colorDarkGrey" android:id="@id/prog_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/progress_main_bar" android:visibility="visible" android:layout_width="90.0dip" android:layout_height="90.0dip" android:indeterminate="true" android:layout_centerInParent="true" style="@style/Base.Widget.AppCompat.ProgressBar" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_back" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="200.0dip" android:layout_height="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Episodes" android:ems="10" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <Spinner android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:id="@id/episodes_spinner" android:background="#ffffffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="180.0dip" android:layout_height="40.0dip" />
+    </LinearLayout>
+</LinearLayout>

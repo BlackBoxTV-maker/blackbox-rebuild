@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="module_items">
+        <item>@string/television</item>
+        <item>@string/movies</item>
+        <item>@string/series</item>
+        <item>@string/change_server</item>
+        <item>@string/settings</item>
+    </string-array>
+</resources>

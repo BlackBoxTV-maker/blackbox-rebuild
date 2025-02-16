@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="abc_dialog_fixed_width_major">50.0%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_minor">70.00001%</item>
+    <item type="dimen" name="abc_dialog_min_width_major">45.000004%</item>
+    <item type="dimen" name="abc_dialog_min_width_minor">72.0%</item>
+    <dimen name="apps_mar_left">850.0dip</dimen>
+    <dimen name="bottom_view_height">5.0dip</dimen>
+    <dimen name="cardview_padding">40.0dip</dimen>
+    <dimen name="catch_text_size_is">26.0sp</dimen>
+    <dimen name="catch_up_cat_mar_left">10.0dip</dimen>
+    <dimen name="catch_up_cat_mar_left_is">35.0dip</dimen>
+    <dimen name="catch_up_cat_mar_top_bot">8.0dip</dimen>
+    <dimen name="catch_up_cat_text_size">23.0sp</dimen>
+    <dimen name="catch_up_grid_mar_left">15.0dip</dimen>
+    <dimen name="catch_up_grid_mar_right">30.0dip</dimen>
+    <dimen name="catch_up_grid_mar_top">20.0dip</dimen>
+    <dimen name="catch_up_grid_mar_top_is">10.0dip</dimen>
+    <dimen name="catch_up_grid_wh">130.0dip</dimen>
+    <dimen name="catch_up_height">50.0dip</dimen>
+    <dimen name="catch_up_left_mar">30.0dip</dimen>
+    <dimen name="catch_up_logo_wh">110.0dip</dimen>
+    <dimen name="catch_up_mar_top">25.0dip</dimen>
+    <dimen name="catch_up_mar_top_bot_is">90.0dip</dimen>
+    <dimen name="catch_up_right_mar">15.0dip</dimen>
+    <dimen name="catch_up_text_height">47.0dip</dimen>
+    <dimen name="catch_up_text_mar_top">30.0dip</dimen>
+    <dimen name="catch_up_text_size">15.0sp</dimen>
+    <dimen name="catch_up_top_bot_mar">30.0dip</dimen>
+    <dimen name="city_size">25.0dip</dimen>
+    <dimen name="clock_mar_rt">10.0dip</dimen>
+    <dimen name="clock_wh">32.0dip</dimen>
+    <dimen name="conn_text_width">22.0dip</dimen>
+    <dimen name="gridview_mar_bot">55.0dip</dimen>
+    <dimen name="main_box_icon_h1">300.0dip</dimen>
+    <dimen name="main_box_icon_w1">180.0dip</dimen>
+    <dimen name="max_temp_size">16.0dip</dimen>
+    <dimen name="min_temp_size">20.0dip</dimen>
+    <dimen name="pb_margin_top">60.0dip</dimen>
+    <dimen name="radio_margin_left">450.0dip</dimen>
+    <dimen name="settings_mar_left">1050.0dip</dimen>
+    <dimen name="tv_mar_left">50.0dip</dimen>
+    <dimen name="vod_mar_left">250.0dip</dimen>
+    <dimen name="weather_desc_size">18.0sp</dimen>
+    <dimen name="weather_icon_mar_topis">10.0dip</dimen>
+    <dimen name="weather_mar_bot">20.0dip</dimen>
+    <dimen name="weather_mar_right">50.0dip</dimen>
+    <dimen name="weather_mar_top">10.0dip</dimen>
+    <dimen name="youtube_mar_left">650.0dip</dimen>
+</resources>

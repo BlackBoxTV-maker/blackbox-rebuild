@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/top_relative_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sample_img" android:background="@drawable/transparentsmall" android:focusable="false" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:weightSum="10.0">
+        <ListView android:id="@id/day_list" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:listSelector="@drawable/catchup_dates_selector" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip" android:layout_weight="3.0" style="@style/scrollbar_shape_style_cat" />
+        <ListView android:id="@id/catchup_program_list" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:listSelector="@drawable/catchup_programs_selector" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip" android:layout_weight="7.0" android:layout_toRightOf="@id/day_list" style="@style/scrollbar_shape_style_cat" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progress_main_bar" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="90.0dip" android:indeterminate="true" android:layout_centerInParent="true" style="@style/Base.Widget.AppCompat.ProgressBar" />
+    <RelativeLayout android:id="@id/loading_layout" android:background="@color/transparent85" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ibostore.bobplayerdk.GradientCircularProgressBar android:id="@id/simpleProgressBar" android:layout_width="@dimen/circular_progress_wh" android:layout_height="@dimen/circular_progress_wh" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

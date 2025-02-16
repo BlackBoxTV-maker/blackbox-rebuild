@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/movie_cat_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/movie_back" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.5">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/movie_lock" android:background="@drawable/mlock" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" />
+            <TextView android:textSize="@dimen/series_text_size" android:textColor="@color/colorDarkGrey" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/dateback" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.5">
+            <TextView android:textSize="@dimen/date_txt_size" android:textColor="@color/white" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/pub_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:text="" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
